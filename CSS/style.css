@@ -1,0 +1,184 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+#top-nav {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	background-color: rgb(12, 4, 75);
+	color: #fff;
+	padding: 10px;
+}
+
+#top-nav #bs-icon {
+	width: 20px;
+	float: left;
+	margin-left: 15px;
+}
+
+#top-nav span {
+	float: left;
+	font-weight: 600;
+}
+
+#top-nav #nav-list {
+	display: inline-block;
+}
+
+#products, #developers {
+	background-color: rgb(12, 4, 75);
+	color: #fff;
+	border: none;
+	padding-left: 20px;
+}
+
+#top-nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0px 15px;
+}
+
+#free-trial-btn {
+	background-color: rgb(12, 4, 75);
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 3px 10px;
+	margin: 0px 15px;
+	border-radius: 4px;
+}
+
+#search-icon {
+	width: 20px;
+	margin: 0px 15px;
+}
+
+#welcome {
+	background-image: url("bground.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 200px;
+}
+
+#welcome h1 {
+	padding-top: 30px;
+	color: #fff;
+}
+
+#welcome p {
+	color: #fff;
+}
+
+#get-started-free, #test-local-website {
+	margin: 10px 0px 40px;
+	padding: 5px 30px;
+	border: none;
+	border-radius: 2px;
+	background-color: rgb(0, 99, 205);
+	color: #fff;
+	font-weight: 400;
+}
+
+#content {
+	padding: 50px 70px;
+}
+
+#content h3 {
+	font-weight: 300;
+	font-size: larger;
+}
+
+.social-media {
+	padding: 20px;
+}
+
+.social-media img {
+	width: 20px;
+	margin-right: 20px;
+}
+
+#table-of-contents {
+	background-color: #ccc;
+	padding: 30px;
+}
+
+#table-of-contents ul {
+	margin-left: 30px;
+}
+
+#table-of-contents a {
+	color: rgb(3, 73, 143);
+}
+
+.steps {
+	margin-left: 50px;
+}
+
+.methods {
+	list-style: none;
+	counter-reset: item;
+}
+
+.methods li {
+	position: relative;
+	counter-increment: item;
+	margin-bottom: 5px;
+}
+
+.methods li::before {
+	position: absolute;
+	margin-left: -35px;
+	content: counter(item);
+	background: rgb(188, 201, 203);
+	border-radius: 50%;
+	width: 25px;
+	text-align: center;
+	display: inline-block;
+}
+
+.methods img {
+	margin: 30px 0 30px;
+	width: 800px;
+	height: 300px;
+}
+
+.help {
+	background-color: lightsteelblue;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 30px 80px;
+	
+}
+
+.help button {
+	background: #fff;
+	color: #000;
+	padding: 5px 10px;
+	margin-left: 20px;
+	border: none;
+	border-radius: 4p
+}
+
+.bottom-social-media {
+	position: relative;
+	margin-left: 45%;
+}
+
+.bottom-social-media img {
+	width: 20px;
+	margin-right: 20px;
+}
+
+#manual-testing, #testing-tools {
+	color: rgb(38, 38, 197);
+	border-color: rgb(38, 38, 197);
+	border-radius: 3px;
+	margin-top: 3px;
+	padding: 5px;
+} 

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BrowserStack</title>
+
+	<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div id="nav-container">
+
+			<nav id="top-nav">
+
+				<div id="logo">
+					<img src="Images/browserstack-icon.png" alt="BrowserStack icon" id="bs-icon">
+					<span>BrowserStack</span>
+				</div>
+
+				<ul id="nav-list">
+						<select id="products">
+							<option value="products">Products</option>
+						</select>
+						<select id="developers">
+							<option value="developers" >Developers</option>
+						</select>
+						<a href="#live-for-teams">Live for Teams</a>
+						<a href="#pricing">Pricing</a>
+						<a href="#sign-in">Sign in</a>
+						<input type="button" id="free-trial-btn" value="FREE TRIAL">
+						<a href="#search"><img src="Images/search-icon.png" alt="Search icon" id="search-icon"></a>
+				</ul>
+
+			</nav>
+
+		</div>
+
+		<div id="welcome">
+			<h1>App & Browser Testing Made <br> Easy</h1>
+			<p>Give your users a seamless experience by testing on 3000+ real devices and browsers.
+				<br>
+				Don't compromise with emulators and simulators
+			</p>
+			<button id="get-started-free">Get Started free</button>
+		</div>
+
+		<div id="content">
+
+			<a href="#home">Home</a> >
+				<a href="#guide">Guide</a> > How to test Local Website On Mobile
+				<h3> <br> How to test Local Website On Mobile</h3> <br>
+				<p>By Mohammad Waseem, Community Contributor - <span>December 30, 2021</span></p>
+				<div class="social-media">
+					<img src="Images/linkedin.png" alt="Linkedin ion" id="linkedin">
+					<img src="Images/facebook.png" alt="Facebook icon" id="facebook">
+					<img src="Images/white-twitter-blue-bg.png" alt="Twitter icon" id="twitter">
+					<img src="Images/whatsapp.png" alt="WhatsApp icon" id="whatsapp">
+				</div><hr><br><br>
+
+				<p>
+					Among the many requirements placed upon developers, a rather important one is to identify if a website will work as efficiently on mobile devices as on desktop. Often, it is important to figure this out while the site is still being designed i.e not publically available. In other words, they have to find a way to test local websites on mobile devices.
+				</p><br>
+
+				<p>This article will explore two methods by which you can accomplish this:</p><br>
+
+				<div class="steps">
+					<ol class="methods">
+						<li>Viewing the local websites on a mobile device simulator</li>
+						<li>Using online testing tools like Browserstack.</li>
+					</ol><br>
+				</div>
+
+				<div id="table-of-contents">
+					<h5>Table of Contents</h5><br>
+					<ul>
+						<li>
+							<a href="#view-mobile">How to view Local Website On Mobile Devices</a>
+						</li><br>
+						<li>
+							<a href="#test-mobile">How to Test a Local Website On a Mobile Device</a>
+						</li>
+						<br>
+						<li>
+							<a href="#test-browserstack">How to Test a Local Website Using BrowserStack</a>
+						</li><br>
+						<li>
+							<a href="#advantages">Advantages of testing on BrowserStack</a>
+						</li><br>
+					</ul>
+				</div><br>
+
+				<h3 id="view-mobile">How to view Local Websites On Mobile Devices</h3><br>
+
+				<p>
+					To view the local websites on mobile devices, you will need to understand IP addresses and port numbers in the localhost URLs. The following steps will help you view local websites on any devices connected to the local network.
+				</p><br>
+				
+				<div class="steps">
+					<ol class="methods">
+						<li>
+							First of all, make sure that you have the application running on the local machine. And, note down the port number (like 5000, 8000, etc) from the localhost URL. e.g - <em>localhost:5000, 127.0.0.1</em>, etc.
+						</li><br>
+						<li>
+							After getting the information on the localhost port number, get information about local IP address. The process is simple - Open the console or the command prompt and type <b>"ipconfig"</b>. Running the command in the console will get you the necessary IPv4 information needed for the next step to work.
+						</li>
+						<li>
+							After gathering the IP address and the port number, enter the URL in the format <b>IP adress: port number</b>, and you will be able to access the local website on the mobilr device/devices.
+						</li>
+					</ol><br>
+				</div>
+
+				<p>After viewing the mobile website/application on the browser, the next step is to test the website.</p><br><br>
+
+				<h3 id="test-mobile">How to Test a Local Website On a Mobile Device</h3><br>
+
+				<p>Since we are already viewing the local website on the mobile device, we can start testing it. After that, we can use the dev tools on the Chrome browser to debug.</p>
+
+				<div class="steps">
+					<ol class="methods">
+						<li>
+							Once you have opened the website on the browser, open the developer's tols in Chrome. <br>
+							<img src="Images/chrome-s1.png" alt=""><br>
+						</li>
+						<li>
+							After opening developer tools, you can choose from a variety of mobile devices available. <br>
+							<img src="Images/chrome-s2.png" alt=""><br>
+						</li>
+						<li>
+							Take note of "<b>inspect element</b>", which allows you to identify or hover the web page's elements. <br>
+							<img src="Images/chrome-s3.png" alt=""><br>
+						</li>
+						<li>
+							Measuring performance, including the web vitals, etc, can be measured using the developer tools.<br>
+							<img src="Images/chrome-s4-1.png" alt=""><br>
+							You can make changes to elements in the console and even their positions. <br>
+							<img src="Images/chrome-s4-2.png" alt=""><br>
+							Directly copy the locators for <a href="#selenium">selenium automation testing</a> like XPath, CSS, ID, name,etc. <br>
+							<img src="Images/chrome-s4-3.png" alt=""><br>
+							Multi-line scripting in the console. <br>
+							<img src="Images/chrome-s4-4.png" alt=""><br>
+						</li>
+					</ol>
+				</div>
+
+				<p>
+					The challange with this approach is that sometimes, you might encounter problems like "<b>ipconfig</b>", not returning results due to inconsistencies in the path variable. To avoid problems like these, you can choose cross-browser testing tools like BrowserStack for ease of access.
+				</p><br><br>
+
+				<h3 id="test-browserstack">How to Test a Local Website Using BrowserStack</h3><br><br>
+
+				<p>
+					Browserstack's <a href="#real-device">real device cloud</a> provides thousands of mobile devices that can be used in real-time for mobile testing of local websites. The devices includes various options from different brands and operating systems that give an authentic assessment of the local website.
+				</p><br><br>
+
+				<img src="" alt="Browserstack page"><br><br>
+
+				<p>Now, to test a local website using BrowserStack, implement the folowing steps:</p>
+
+				<div class="steps">
+					<ol class="methods">
+						<li>
+							To view the local websites on the devices, download <a href="#browserstack">BrowserStack local</a> extension that will enale the local connection every <br>
+							<img src="" alt="BrowserStack menu"><br><br>
+							time you are trying to view a local website on any of the selected devices.
+						</li>
+						<li>
+							After downloading the BrowserStack local, choose any of the devices available on the dashboard and wait for its real-time simulation. You will notice that the <a href="#local-testing">local testing</a>, tab shows a gren light, which means the connection has been successful and you can view these websites on mobile devices. <br>
+							<img src="" alt="Local testing"><br><br>
+						</li>
+						<li>
+							BrowserStack also provides developer tools with which you can locate, inspect web element, etc. <br>
+							<img src="" alt="Developer tools"><br><br>
+						</li>
+					</ol>
+				</div>
+
+				<p>
+					Now that we know how we can view and test the local websites ising BrowserStack tools, let's discus a few advantages that comes with it.
+				</p>
+
+				<button id="test-local-website">Test Local Website on Real Mobile Cloud for Free</button><br>
+
+				<h3 id="advantages">Advantages of testing on BrowserStack</h3><br>
+
+				<div class="steps">
+					<ol class="methods">
+						<li>
+							You can test your web application on over 300+ real browsers and devices.
+						</li>
+						<li>
+							Development and debugging using the developer tools are supported on various browsers like Chrome, FireFox, Opera, Edge, Safari, Internet Explorer, etc.
+						</li>
+						<li>
+							Test websites easily in environments behind one or more proxies, behind firewall or VPN, etc.
+						</li>
+					</ol>
+				</div>
+
+				<p>
+					Ease access and user-friendly interface is what sets it apart from other convertional methods of testing local websites on mobiledevices. For more details, check out <a href="#for-more-info">Local Testing with BrowserStack</a>.
+				</p><br>
+
+				<p>
+					Testing local websites on mobile devices fullfills significant stakeholder requirements. It affirms that their product/app will run efficiently on any mobile device in <a href="#real-user">real user conditions</a>, without having to make it publicly accessible. With BrowserStack, they can test local versions of the site on real mobile devices, thus getting conclusive results without having to deal with user displeasure for realising an inadequately optimized wesite.
+				</p><br><br>
+
+				<div class="help">
+					<h3>Was this post useful?</h3>
+					<span>
+						<button>Yes, Thanks</button>
+						<button>Not Really</button>
+					</span>
+				</div><br>
+
+				<div class="bottom-social-media">
+					<span>
+						<img src="Images/linkedin.png" alt="Linkedin ion" id="linkedin">
+						<img src="Images/facebook.png" alt="Facebook icon" id="facebook">
+						<img src="Images/white-twitter-blue-bg.png" alt="Twitter icon" id="twitter">
+						<img src="Images/whatsapp.png" alt="WhatsApp icon" id="whatsapp">
+					</span>
+				</div><br>
+
+				<h5>Tags</h5>
+				<span>
+					<button id="manual-testing">Manual Testing</button>
+					<button id="testing-tools">Testing Tools</button>
+				</span>
+
+		</div>
+
+	</div>
+	
+</body>
+</html>
